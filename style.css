@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #fff;
+  background: radial-gradient(circle, #fff 0%, #3684df 100%);
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+}
+
+.form-control input {
+  flex: 1;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #858585;
+  background-color: transparent;
+}
+
+.form-control button {
+  background-color: #76df76;
+  border: none;
+  padding: 8px 11px;
+}
+
+.form-control button:hover {
+  background-color: #008000;
+}
+
+.date-hour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem 1.5rem 1rem;
+  font-size: 16px;
+  color: #102f5e;
+}
+
+button {
+  background-color: #ff8c00;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border: 1px solid #f5880e;
+}
+
+button:hover {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+button > i {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input {
+  padding: 0.4rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.todo-container {
+  background-color: #ecf0f1;
+  border-radius: 15px;
+  width: 450px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+}
+
+.todo-container header {
+  padding: 0 1rem 1rem;
+}
+
+header > h1 {
+  padding-left: 16px;
+  border-left: 5px solid #e74c3c;
+}
+
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form > p,
+#edit-form > p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control > input {
+  margin-right: 0.8rem;
+}
+
+#cancel-edit-btn {
+  margin-top: 1rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem 0.2rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  margin-left: 0.4rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #ecf0f1;
+}
+
+.done {
+  background-color: #008000;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.todo button:hover,
+.done button {
+  background-color: #395169;
+  color: #ecf0f1;
+}
+
+.done > button:hover {
+  background-color: #ecf0f1;
+  color: #102f5e;
+}
+
+#todo-list {
+  max-height: 220px;
+  overflow: auto;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  .todo-container {
+    width: 90%;
+  }
+}
